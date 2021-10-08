@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  /* box-sizing: border-box; */
+}
+main {
+  background-color: rgb(20, 34, 59);
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.glass {
+  width: 46%;
+  min-height: 80vh;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  border-radius: 30px;
+  border: 0.4px solid rgba(255, 255, 255, 0.2);
+  border-right: 0.3px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 0.3px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
+  margin-top: 3.2%;
+  z-index: 4;
+}
+.circle1,
+.circle2 {
+  position: absolute;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+}
+.circle1 {
+  background: linear-gradient(to right top, rgb(241, 52, 93), rgb(255, 217, 0));
+  left: 9%;
+  bottom: 0.6%;
+}
+.circle2 {
+  background: linear-gradient(
+    to right top,
+    rgb(12, 224, 224),
+    rgb(97, 255, 163)
+  );
+  right: 9%;
+  top: 1%;
+}
+.glass h1,
+.glass p {
+  color: #fff;
+  text-align: center;
+  padding: 0.8em 0 0;
+}
+.glass h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.glass p {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+form {
+  padding: 50px;
+}
+.row {
+  /* display: flex;
+  flex-direction: column; */
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.row .col {
+  /* flex-basis: 45%; */
+  margin-bottom: 20px;
+}
+input,
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  outline: none;
+  color: #fff;
+}
+::placeholder {
+  color: aliceblue;
+  opacity: 0.5;
+}
+label {
+  display: block;
+  color: #fff;
+  padding-bottom: 10px;
+}
+textarea {
+  resize: none;
+}
+button {
+  width: 100px;
+  height: 30px;
+  background: linear-gradient(rgb(12, 224, 224), rgb(97, 255, 163));
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  color: rgb(7, 27, 116);
+  font-weight: 500;
+  margin-top: 20px;
+}
+#one {
+  margin-top: 32px;
+}
+input[type="checkbox"] {
+  width: 10%;
+  color: #fff;
+  display: inline;
+  margin-bottom: 16px;
+}
+input[type="radio"] {
+  width: 10%;
+  color: #fff;
+  display: inline;
+}
+@media screen and (max-width: 700px) {
+  main {
+    overflow: hidden;
+  }
+  .glass {
+    width: 80%;
+  }
+  form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .circle1,
+  .circle2 {
+    display: none;
+  }
+}
+select {
+  color: black;
+}
+select option {
+  color: darkblue;
+}
